@@ -1,0 +1,23 @@
+
+
+@mixin color-button {
+    background-color: $color-botones;
+    color: $color-claro;
+}
+
+@mixin column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin footer {
+    background-color: $color-oscuro;
+    color: $color-claro;
+    height: 11vh;
+    @include column-center;
+    p {
+        margin: 0;
+    }
+}

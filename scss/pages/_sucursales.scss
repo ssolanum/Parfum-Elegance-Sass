@@ -1,0 +1,48 @@
+#ubicacion {
+    background-image: url(../assets/img/imagen-ubicacion.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 56px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    h1 {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 40px;
+        color: $color-claro;
+    }
+    #contenedor-direcciones {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 500px;
+        width: 50vw;
+        margin: 0 auto;
+        text-align: center;
+        .sucursal {
+            // background-color: $color-botones;
+            background-image: linear-gradient(to bottom, $color-botones, $color-botones-gradient);
+            color: $color-claro;
+            width: 470px;
+            height: 140px;
+            font-size: 14px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding-left: 10px;
+            transition: transform .5s ease;
+            &:hover {
+                transform: scale(1.2);
+            }
+            p {
+                font-size: 19px;
+            }
+            .nombre-local {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+}

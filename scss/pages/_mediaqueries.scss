@@ -1,0 +1,306 @@
+// mediaqueries del index
+
+@media only screen and (max-width: 1227px) and (min-width: 767px) {
+    #contenedor-ofertas {
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 980px) and (min-width: 497px) {
+    main {
+        #ofertas {
+            height: 700px;
+            #contenedor-ofertas {
+                width: 55vw;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                justify-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                row-gap: 30px;
+                .contenedor-img {
+                    height: 250px;
+                    width: 240px;
+                }
+            }
+        }
+    }
+    footer p {
+        font-size: 13px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 496px) and (min-width: 425px) {
+    main {
+        #main-ad {
+            height: 60vh;
+            width: 100vw;
+            p {
+                width: 70vw;
+            }
+        }
+        #ofertas {
+            height: 600px;
+            #contenedor-ofertas {
+                width: 55vw;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                justify-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                row-gap: 30px;
+                .contenedor-img {
+                    height: 200px;
+                    width: 190px;
+                }
+            }
+        }
+    }
+    footer p {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 424px) and (min-width: 320px) {
+    main {
+        #ofertas {
+            height: 500px;
+            padding: 0;
+            #contenedor-ofertas {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                justify-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                .contenedor-img {
+                    height: 150px;
+                    width: 140px;
+                }
+            }
+        }
+    }
+    footer {
+        height: 15vh;
+        p {
+            font-size: 11px;
+            text-align: center;
+        }
+    }
+}
+
+// mediaqueries de productos
+
+@media only screen and (max-width: 1264px) and (min-width: 1084px) {
+    #main-productos {
+        padding-left: 2%;
+        padding-right: 2%;
+        #titulo {
+            #filtros {
+                width: 70%;
+            }
+        }
+        // #productos {
+        //     .contenedor-producto {
+        //         height: 370px;
+        //         width: 250px;
+        //         .contenedor-producto img {
+        //             height: 230px;
+        //         }
+        //     }
+        // }
+    }
+}
+
+@media only screen and (max-width: 1083px) and (min-width: 700px) {
+    #main-productos {
+        height: 1800px;
+        #titulo {
+            text-align: center;
+            #filtros {
+                max-width: none;
+                width: 100%;
+                justify-content: center;
+                column-gap: 15px;
+            }
+        }
+        #productos {
+            height: 95%;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) and (min-width: 546px) {
+    #main-productos {
+        height: 1800px;
+        padding-left: 3%;
+        padding-right: 3%;
+        #titulo {
+            text-align: center;
+            #filtros {
+                max-width: none;
+                width: 100%;
+                justify-content: center;
+                column-gap: 15px;
+                #filtros button {
+                    width: 70px;
+                }
+            }
+        }
+        #productos {
+            height: 95%;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            // .contenedor-producto {
+            //     height: 350px;
+            //     width: 230px;
+            //     .contenedor-producto img {
+            //         height: 210px;
+            //         object-fit: cover;
+            //     }
+            // }
+        }
+    }
+}
+
+@media only screen and (max-width: 545px) and (min-width: 320px) {
+    #main-productos {
+        height: 3300px;
+        padding-left: 3%;
+        padding-right: 3%;
+        #titulo {
+            text-align: center;
+            #filtros {
+                width: 100%;
+                justify-content: space-between;
+                button {
+                    width: 70px;
+                    height: 30px;
+                    font-size: 14px;
+                }
+            }
+        }
+        #productos {
+            padding-top: 70px;
+            height: 95%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .contenedor-producto {
+                height: 370px;
+                width: 250px;
+                .contenedor-producto img {
+                    height: 230px;
+                }
+            }
+        }
+    }
+    footer p {
+        font-size: 13px;
+        text-align: center;
+    }
+}
+
+// mediaqueries pagina nosotros
+
+@media only screen and (max-width: 1024px) {
+    #nosotros {
+        p {
+            font-size: 16px;
+        } 
+        #contenedor-asesoras {
+            justify-content: space-evenly;
+            .asesora {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 679px) and (min-width: 530px) {
+    #nosotros {
+        #contenedor-asesoras {
+            .asesora {
+                height: 230px;
+                .asesora img {
+                    height: 150px;
+                    width: 150px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 529px) {
+    #nosotros {
+        justify-content: space-between;
+        height: 1250px;
+        padding-bottom: 0px;
+        #contenedor-asesoras {
+            height: 1000px;
+            flex-direction: column;
+        }
+    }
+}
+
+// mediaqueries pagina sucursales
+
+@media only screen and (max-width: 953px) {
+    #ubicacion {
+        #contenedor-direcciones {
+            width: 80vw;
+            .sucursal {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 402px) {
+    #ubicacion {
+        #contenedor-direcciones {
+            .sucursal {
+                height: 155px;
+            }
+        }
+    }
+}
+
+// mediaqueries pagina contacto
+
+@media only screen and (max-width: 578px) and (min-width: 425px) {
+    #contacto {
+        #contenedor-contacto {
+            #contenedor-medios {
+                width: 100%;
+                #contenedor-medios button {
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #contacto {
+        #contenedor-contacto {
+            padding-left: 5px;
+            padding-right: 5px;
+            #contenedor-contacto p {
+                font-size: 16px;
+            }
+            #contenedor-medios {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+    footer p {
+        font-size: 13px;
+        text-align: center;
+    }
+}

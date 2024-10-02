@@ -1,0 +1,15 @@
+@import '../scss/base/reset';
+@import '../scss/utilities/variables';
+@import '../scss/utilities/mixins';
+@import '../scss/base/tipografia';
+// header incluido en el nav
+@import '../scss/layout/nav';
+@import '../scss/pages/index';
+@import '../scss/pages/nosotros';
+@import '../scss/pages/productos';
+@import '../scss/pages/sucursales';
+@import '../scss/pages/contacto';
+@import '../scss/componentes/buttons';
+@import '../scss/layout/footer';
+@import '../scss/pages/mediaqueries';
+@import '../scss/base/animaciones';

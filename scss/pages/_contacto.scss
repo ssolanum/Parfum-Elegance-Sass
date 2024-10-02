@@ -1,0 +1,29 @@
+#contacto {
+    background-image: url(../assets/img/imagen-contacto.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 56px;
+    padding-top: 300px;
+    padding-bottom: 244px;
+    height: 100vh;
+    #contenedor-contacto {
+        background-color: rgba(250, 247, 255, 0.9);
+        color: $color-oscuro;
+        text-align: center;
+        height: 200px;
+        @include column-center;
+        h1 {
+            font-weight: bold;
+        }
+        p {
+            font-size: 20px;
+        }
+        #contenedor-medios {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}

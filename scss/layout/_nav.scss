@@ -1,0 +1,18 @@
+.navbar {
+    background-color: $color-oscuro;
+    .container-fluid {
+        .navbar-brand {
+            color: $color-claro;
+            font-size: 20px;
+        }
+        .navbar-toggler {
+            background-color: $color-claro;
+        }
+        .offcanvas {
+            .offcanvas-body, .offcanvas-header {
+                background-color: $color-claro;
+                color: $color-oscuro;
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+#main-ad {
+    button {
+        cursor: pointer;
+        border: 0;
+        height: 40px;
+        width: 90px;
+        border-radius: 4px;
+        font-family: Roboto;
+        font-size: 16px;
+        display: inline-block;
+        font-weight: 900;
+        @include color-button;
+        &:hover {
+            animation: danceMiddle 0.8s ease-in-out forwards;
+            animation-iteration-count: 1;
+        }
+    }
+}
+
+
+#filtros {
+    button {
+        cursor: pointer;
+        width: 100px;
+        height: 40px;
+        border: none;
+        border-radius: 4px;
+        @include color-button;
+    }
+}
+
+.boton-compra {
+    cursor: pointer;
+    height: 32px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 15px;
+    @include color-button;
+    &:hover {
+        animation: danceMiddle 0.8s ease-in-out forwards;
+        animation-iteration-count: 1;
+    }
+}
+
+#contenedor-medios {
+    button {
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: bold;
+        border: none;
+        width: 150px;
+        height: 50px;
+        margin-right: 20px;
+        margin-left: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        @include color-button;
+        &:hover {
+            animation: danceMiddle 0.8s ease-in-out forwards;
+            animation-iteration-count: 1;
+        }
+    }
+}

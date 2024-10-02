@@ -1,0 +1,56 @@
+main {
+    padding-top: 56px;
+    display: flex;
+    flex-direction: column;
+    #main-ad {
+        background-image: url(../assets/img/eros-perfume-img.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+        width: 100%;
+        color: $color-claro;
+        @include column-center;
+        h1 {
+            font-size: 45px;
+            font-weight: bold;
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+    #ofertas {
+        height: 60vh;
+        // background-color: $color-claro;
+        background-image: linear-gradient(165deg, $color-botones-gradient, $color-claro 80%);
+        color: $color-oscuro;
+        @include column-center;
+        padding-bottom: 50px;
+        padding-top: 30px;
+        
+        p {
+            font-size: 23px;
+            font-weight: bold;
+            text-align: center;
+            animation: hu__hu__ infinite 2s ease-in-out;
+        }
+        #contenedor-ofertas {
+            width: 70vw;
+            max-width: 950px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            animation: hu__hu__ infinite 2s ease-in-out;
+            .contenedor-img {
+                height: 200px;
+                width: 190px;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

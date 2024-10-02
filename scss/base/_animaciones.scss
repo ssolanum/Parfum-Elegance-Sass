@@ -1,0 +1,14 @@
+.hu__hu__ { animation: hu__hu__ infinite 2s ease-in-out }
+@keyframes hu__hu__ {
+    50% { transform: translateY(30px) }
+}
+
+.danceMiddle { animation-name: danceMiddle }
+@keyframes danceMiddle {
+    16% { transform: skew(-14deg) }
+    33% { transform: skew(12deg) }
+    49% { transform: skew(-8deg) }
+    66% { transform: skew(6deg) }
+    83% { transform: skew(-4deg) }
+}
+

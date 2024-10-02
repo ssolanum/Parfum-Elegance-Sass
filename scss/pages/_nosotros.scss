@@ -1,0 +1,54 @@
+#nosotros {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: $color-claro;
+    color: $color-oscuro;
+    @include column-center;
+    height: 100vh;
+    h1 {
+        font-size: 30px;
+        font-weight: bold;
+        display: block;
+    }
+    p {
+        width: 70vw;
+        font-size: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: block;
+        margin-bottom: 30px;
+    }
+    #contenedor-asesoras {
+        background-image: linear-gradient(to bottom, $color-botones, $color-botones-gradient 80%);
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .asesora {
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 280px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-right: 60px ;
+            background-color: $color-claro;
+            transition: transform .5s ease;
+            &:hover {
+                transform: scale(1.2);
+            }
+            img {
+                height: 200px;
+                width: 200px;
+                object-fit: cover;
+            }
+            p {
+                font-weight: bold;
+                width: auto;
+            }
+        }
+    }
+}
