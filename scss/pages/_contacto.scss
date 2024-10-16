@@ -11,6 +11,8 @@
         color: $color-oscuro;
         text-align: center;
         height: 200px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         @include column-center;
         h1 {
             font-weight: bold;
